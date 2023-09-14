@@ -1,0 +1,152 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+/***************************************/
+/***  Den Main mit hintergrund Bild  ***/
+/***************************************/
+main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(hintergrund1.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  animation-name: hintergrund;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+/********************************/
+/***  Den Keyframe von Main  ***/
+/*******************************/
+@keyframes hintergrund {
+  0% {
+    background-position: 0px 0px;
+  }
+  25% {
+    filter: hue-rotate(45deg);
+  }
+  50% {
+    filter: hue-rotate(90deg);
+  }
+  70% {
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    background-position: -1200px 0px;
+  }
+}
+/********************************************/
+/***  Den IMG mit dem name von Animation  ***/
+/*******************************************/
+.img img {
+  width: 50px;
+  height: 50px;
+  animation-name: Img;
+  animation-duration: 12s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+/********************************/
+/***  Den Keyframes mein IMG  ***/
+/********************************/
+@keyframes Img {
+  0% {
+    width: 77px;
+    height: 77px;
+  }
+  20% {
+    width: 75px;
+    height: 75px;
+  }
+  30%{
+    width: 70px;
+    height: 70px;
+  }
+  40% {
+    width: 65px;
+    height: 65px;
+  }
+  50% {
+    width: 68px;
+    height: 68px;
+  }
+  60% {
+    width: 40px;
+    height: 40px;
+  }
+  70% {
+    width: 60px;
+    height: 60px;
+  }
+  80% {
+    width: 55px;
+    height: 55px;
+  }
+  90% {
+    width: 57px;
+    height: 57px;
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+  }
+}
+/********************************************/
+/***  Den div mit dem name von animation  ***/
+/********************************************/
+main .img {
+  width: 50px;
+  height: 50px;
+  animation-name: DivImg;
+  animation-duration: 12s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate-reverse;
+}
+/*******************************/
+/***  Den Keyframes von div  ***/
+/*******************************/
+@keyframes DivImg {
+  0% {
+    transform: translateX(5vw) translateY(70vh);
+  }
+  20% {
+    transform: translateX(7vw) translateY(67vh);
+    
+  }
+  30% {
+    transform: translateX(8vw) translateY(63vh);
+    
+  }
+  40% {
+    transform: translateX(15vw) translateY(63vh);
+    
+  }
+  50% {
+    transform: translateX(6vw) translateY(60vh);
+    
+  }
+  60% {
+    transform: translateX(20vw) translateY(44vh);
+   
+  }
+  70% {
+    transform: translateX(18vw) translateY(50vh);
+    
+  }
+  80% {
+    transform: translateX(15vw) translateY(30vh);
+    
+  }
+  90% {
+    transform: translateX(12vw) translateY(38vh);
+  }
+  100% {
+    transform: translateX(28vw) translateY(70vh);
+  }
+}
